@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Aldo the Apache';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aldo the Apache'), url('../fonts/AldotheApache/AldotheApache.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Slab Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Slab Regular'), url('../fonts/RobotoSlab/RobotoSlab-Regular.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab Regular';
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.logo {
+    font-family: 'Aldo the Apache';
+    letter-spacing: 2px;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 410px;
+    position: relative;
+    line-height: 90px;
+}
+
+.logo::before {
+    content: '';
+    width: 39px;
+    height: 44px;
+    background-image: url('../imgs/icons/h1-arrow-up-left.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo::after {
+    content: '';
+    width: 39px;
+    height: 44px;
+    background-image: url('../imgs/icons/h1-arrow-down-right.png');
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.pure-menu-item a {
+    font-family: 'Roboto Slab Regular';
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    transition: all ease .3s;
+    border-bottom: 1px solid transparent;
+}
+
+.pure-menu-item a:hover {
+    border-bottom: 1px solid;
+}
+
+hr.linha {
+    width: 100%;
+    height: 5px;
+    background-color: #949494;
+    margin: 16px 0 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: 'Roboto Slab Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 64px 0;
+}
+
+.text-description {
+    font-family: 'Roboto Slab Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.p32 {
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.p16 {
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.plr16 {
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.legenda {
+    font-family: 'Roboto Slab Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.center .pure-img {
+    margin: 0 auto;
+}
+
+.conteiner-icons {
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.conteiner-icons > div {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    font-family: 'Roboto Slab Regular';
+    color: white;
+    line-height: 24px;
+    height: 32px;
+    margin-bottom: 20px;
+}
+
+.conteiner-icons > div a {
+    font-family: 'Roboto Slab Regular';
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+iframe {
+    border: 0; 
+    width: 100%;
+    height: 500px;
+}
+
+.conteiner-icons .title {
+    font-size: 28px;
+    text-align: left;
+    margin: 64px 0 32px;
+}
+
+.maps {
+    height: 500px;
+}
+
+footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+@media (max-width: 1024px)
+{
+  #btn-mobile {
+    display: block;
+  }
+  h2, a, div {
+    letter-spacing: initial;
+  }
+  .conteiner-icons {
+    padding-left: 64px;
+  }
+  .conteiner-icons .title {
+    line-height: 40px;
+  }
+  .title {
+    margin: 32px 0 0;
+  }
+  .conteiner-maps {
+    border-top: 5px solid #949494;
+    margin-top: 64px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  ul#menu {
+    display: none;
+  }
+  .active ul#menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.active li.pure-menu-item {
+    display: block;
+    border-top: 1px solid #949494;
+}
+.active .pure-menu-item a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 12px;
+}
+.btn-menu {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+}
